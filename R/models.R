@@ -519,7 +519,7 @@ model_word2vec <- function(...){
 #' @export
 load_word2vec <- function(file){
   assert_that(!missing(file), msg = "Missing `file`")
-  gensim$models$Word2Vec$load(file)
+  gensim$models$KeyedVectors$load(file)
 }
 
 #' Get Document Topics
